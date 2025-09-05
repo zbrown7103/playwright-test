@@ -9,6 +9,8 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.55.0",
-    "@types/node": "^24.3.1"
+    "@types/node": "^24.3.1",
+    "playwright-ctrf-json-reporter": "^0.0.18",
+    "github-actions-ctrf": "^0.0.50"
   }
 }

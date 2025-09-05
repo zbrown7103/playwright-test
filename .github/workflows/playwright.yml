@@ -25,3 +25,12 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+    - name: Publish test summary results...
+      run: npx github-actions-ctrf end2end/ci-nighly-test.json
+      if: always()
+    - name: Upload HTML test report...
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: CI-Nightly-Test-Report
+        path: end2end-report
